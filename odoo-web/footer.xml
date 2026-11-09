@@ -1,0 +1,53 @@
+<data name="Links">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo text-break" t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Container" data-oe-shape-data="{'shape':'html_builder/Containers/03','colors':{'c5':'o-color-4'},'flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}">
+                <div class="o_we_shape o_html_builder_Containers_03 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Containers/03.svg?c5=o-color-4');"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Explorar</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="/nuestra-firma">Nuestra firma</a></li>
+                                <li><a href="/casos-de-exito">Casos de éxito</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/privacy">Política de privacidad</a></li>
+                                <li><a href="/forum">Foro</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Consultoría</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/servicios">Servicios</a></li>
+                                <li><a href="/casos-de-exito">Casos de éxito</a></li>
+                                <li><a href="/nuestra-firma">Quiénes somos</a></li>
+                                <li><a href="/contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Síguenos</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="oi oi-fw me-2" data-icon="oi_facebook-square"/><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                                <li><i class="oi oi-fw me-2" data-icon="oi_x-square"/><a href="#" target="_blank" rel="noopener">X</a></li>
+                                <li><i class="oi oi-fw me-2" data-icon="oi_linkedin-square"/><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                                <li><i class="oi oi-fw me-2" data-icon="oi_instagram"/><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Contáctenos</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="oi oi-fw oi-filled me-2" data-icon="mail"/><a href="mailto:gerencia@gvagroup.com.co">gerencia@gvagroup.com.co</a></li>
+                                <li><i class="oi oi-fw oi-filled me-2" data-icon="phone"/><a href="tel:+573219101850"><span class="o_force_ltr">+57 321 910 1850</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Ubicación</h5>
+                            <p>Calle 60B Sur # 44-100<br/>Sabaneta, Antioquia, 055457<br/>Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</data>
