@@ -1,0 +1,55 @@
+<data name="Links">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div id="footer" class="oe_structure oe_structure_solo text-break" t-ignore="true" t-if="not no_footer">
+            <section class="s_text_block pt48 pb16" data-snippet="s_text_block" data-name="Container" data-oe-shape-data="{'shape':'html_builder/Containers/03','colors':{'c5':'o-color-4'},'flip':[],'showOnMobile':true,'shapeAnimationSpeed':'0'}">
+                <div class="o_we_shape o_html_builder_Containers_03 o_shape_show_mobile" style="background-image: url('/html_editor/shape/html_builder/Containers/03.svg?c5=o-color-4');"/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Explorar</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="#">Nuestra firma</a></li>
+                                <li><a href="#">Casos de éxito</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <t t-set="configurator_footer_links" t-value="[{&quot;text&quot;: &quot;Pol\u00edtica de privacidad&quot;, &quot;href&quot;: &quot;/privacy&quot;}, {&quot;text&quot;: &quot;Foro&quot;, &quot;href&quot;: &quot;/forum&quot;}]"/>
+                                <li t-foreach="configurator_footer_links" t-as="link">
+                                    <a t-att-href="link['href']" t-out="link['text']"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Consultoría</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Recursos</a></li>
+                                <li><a href="#">Mercado</a></li>
+                                <li><a href="#">Estrategia</a></li>
+                                <li><a href="#">Servicios</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Síguenos</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="oi oi-fw me-2" data-icon="oi_facebook-square"/><a href="#" target="_blank">Facebook</a></li>
+                                <li><i class="oi oi-fw me-2" data-icon="oi_x-square"/><a href="#" target="_blank">X</a></li>
+                                <li><i class="oi oi-fw me-2" data-icon="oi_linkedin-square"/><a href="#" target="_blank">LinkedIn</a></li>
+                                <li><i class="oi oi-fw me-2" data-icon="oi_instagram"/><a href="#" target="_blank">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Contáctenos</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="oi oi-fw oi-filled me-2" data-icon="mail"/><a href="mailto:info@yourcompany.com">contacto@xxxx.com</a></li>
+                                <li><i class="oi oi-fw oi-filled me-2" data-icon="phone"/><a href="tel:+1 555-555-5556"><span class="o_force_ltr">+52 55 5555 5555"</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-10 offset-1 offset-lg-0 pb16">
+                            <h5>Consultora</h5>
+                            <p>Av. Reforma 1234, Piso 8 <br/> Ciudad de México, CDMX 06600 <br/>México</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </xpath>
+</data>

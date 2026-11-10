@@ -1,0 +1,232 @@
+<t name="Homepage" t-name="website.homepage">
+    <t t-call="website.layout" pageName.f="homepage">
+        <div id="wrap" class="oe_structure"><section class="s_hero_minimalist pt80 pb80" data-snippet="s_hero_minimalist">
+        <div class="container s_allow_columns">
+            <div class="row align-items-end">
+                <div class="col-lg-7">
+                    <h1 class="display-2-fs">Impulsamos tu negocio con estrategia, análisis y soluciones a medida.</h1>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <p>Nuestra historia nace de la pasión, la dedicación y el compromiso de crear valor mediante la colaboración y la innovación.</p>
+                    <p>
+                        <a class="o_translate_inline btn btn-primary" href="/contactus">Saber más</a>
+                    </p>
+                </div>
+                <div class="col-lg-12 pt80">
+                    <img src="/web/image/website.landscape_xl_1" alt="" class="img img-fluid" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_text_block_split pt80 pb0" data-snippet="s_text_block_split">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <p class="h5-fs">NUESTRA HISTORIA</p>
+                </div>
+                <div class="col-lg-7 offset-lg-3">
+                    <h2 class="h3-fs">Nuestra historia se construye con pasión, dedicación y el compromiso de generar resultados significativos. Cada paso refleja nuestros valores y la visión que impulsa a tu empresa hacia el futuro.</h2>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_services_grid pt64 pb64" data-snippet="s_services_grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p><img src="/web/image/website.landscape_md_1" class="img img-fluid rounded" alt="" loading="lazy"/></p>
+                    <h3 class="h5-fs">Confianza</h3>
+                    <p>Los procesos sólidos, la metodología probada y los objetivos claros mantienen tu negocio confiable durante cambios, retos y la operación diaria.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p><img src="/web/image/website.landscape_md_2" class="img img-fluid rounded" alt="" loading="lazy"/></p>
+                    <h3 class="h5-fs">Estrategia</h3>
+                    <p>El diagnóstico estratégico y las herramientas de análisis te ayudan a tomar decisiones más rápidas, reducir retrabajos y enfocarte en crecer.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p><img src="/web/image/website.landscape_md_3" class="img img-fluid rounded" alt="" loading="lazy"/></p>
+                    <h3 class="h5-fs">Confianza</h3>
+                    <p>Un enfoque profesional, una comunicación clara y entregables bien presentados hacen que cada sección transmita calidad, mantenga coherencia y facilite una lectura rápida.</p>
+                </div>
+                <div class="col-lg-4">
+    <div class="s_hr pt32 pb32" data-snippet="s_hr" data-name="Separador">
+        <hr class="w-100 mx-auto"/>
+    </div>
+                    
+                    <p><img src="/web/image/website.landscape_md_4" class="img img-fluid rounded" alt="" loading="lazy"/></p>
+                    <h3 class="h5-fs">Innovación</h3>
+                    <p>Soluciones prácticas, metodologías modernas y acompañamiento flexible para avanzar con seguridad, adaptarte rápido y mantenerte competitivo.</p>
+                </div>
+                <div class="col-lg-4">
+    <div class="s_hr pt32 pb32" data-snippet="s_hr" data-name="Separador">
+        <hr class="w-100 mx-auto"/>
+    </div>
+                    
+                    <p><img src="/web/image/website.landscape_md_5" class="img img-fluid rounded" alt="" loading="lazy"/></p>
+                    <h3 class="h5-fs">Confianza</h3>
+                    <p>Los procesos definidos, la confidencialidad y el acompañamiento confiable protegen tu información, tu equipo y tus decisiones frente a riesgos comunes en todo momento.</p>
+                </div>
+                <div class="col-lg-4">
+    <div class="s_hr pt32 pb32" data-snippet="s_hr" data-name="Separador">
+        <hr class="w-100 mx-auto"/>
+    </div>
+                    
+                    <p><img src="/web/image/website.landscape_md_6" class="img img-fluid rounded" alt="" loading="lazy"/></p>
+                    <h3 class="h5-fs">Soporte</h3>
+                    <p>Recibe asesoría práctica, respuestas ágiles y seguimiento cercano para avanzar sin frenar a tu equipo.</p>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_showcase pt80 pb80" data-vcss="003" data-snippet="s_showcase_square">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12 pb32">
+                            <h2 class="h3-fs">Nuestras funciones</h2>
+                            <p class="lead">Descubre los servicios y ventajas que nos diferencian y pueden impulsar el crecimiento de tu empresa.</p>
+                        </div>
+                        <div class="col-lg-6 pt8 pb8" data-name="Feature">
+                            <i class="oi s_showcase_icon rounded bg-o-color-1" data-icon="star" role="img"/>
+                            <div class="d-flex flex-column">
+                                <h3 class="h5-fs">Atributos destacados</h3>
+                                <p>Mostramos con claridad los principales beneficios y el valor diferencial de tu consultoría empresarial.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pt8 pb8" data-name="Feature">
+                            <i class="oi s_showcase_icon rounded bg-o-color-1" data-icon="person" role="img"/>
+                            <div class="d-flex flex-column">
+                                <h3 class="h5-fs">Atraiga a los visitantes</h3>
+                                <p>Atraemos a tus clientes y explicamos tu propuesta de valor con claridad.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pt8 pb8" data-name="Feature">
+                            <i class="oi s_showcase_icon rounded bg-o-color-1" data-icon="favorite" role="img"/>
+                            <div class="d-flex flex-column">
+                                <h3 class="h5-fs">Impulse las conversiones</h3>
+                                <p>Organizamos y presentamos la información clave de forma eficaz para aumentar las posibilidades de convertir a tus visitantes en clientes.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pt8 pb8" data-name="Feature">
+                            <i class="oi s_showcase_icon rounded bg-o-color-1" data-icon="bookmark" role="img"/>
+                            <div class="d-flex flex-column">
+                                <h3 class="h5-fs">Ordena la información</h3>
+                                <p>Estructuramos y clasificamos la información de forma eficaz para facilitar decisiones y comprensión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 o_snippet_mobile_invisible d-lg-block d-none">
+                    <img src="/web/image/website.set_2_square_md_1" class="img img-fluid ms-auto rounded float-end" alt="" style="width: 100% !important;" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+    </section><section id="main_section" data-snippet="s_dynamic_snippet_category_list" class="s_dynamic_snippet_category_list oe_website_sale s_dynamic_snippet_category s_dynamic_category_no_arrows s_dynamic o_dynamic_snippet_loading s_product_public_category_default o_colored_level pt96 pb96" data-custom-template-data="{}" data-number-of-records="10" data-filter-id="12" data-template-key="website_sale.dynamic_filter_template_product_public_category_default" data-show-parent="true" data-columns="4" data-rounded="2" data-gap="2" data-size="medium" data-alignment="left">
+            <div class="s_dynamic_snippet_container container">
+                <div class="row s_nb_column_fixed">
+                    
+                    <section class="s_dynamic_snippet_holder d-none px-4 placeholder-glow">
+                        <div class="row">
+                            <span class="placeholder col-3 rounded"/>
+                            <span class="placeholder col-2 offset-7 rounded"/>
+                            <span class="placeholder mt-3 col-6 rounded"/>
+                        </div>
+                        <div class="row mt-4">
+                            <span class="placeholder col-12 rounded" style="height: 250px;"/>
+                        </div>
+                    </section>
+                    <section class="flex-column s_dynamic_snippet_title oe_unremovable oe_unmovable mb-lg-0 pb-3 pb-md-0 s_col_no_resize d-none">
+                        <div class="w-lg-50">
+                            <h2 class="h3">Conozca nuestros servicios clave</h2>
+                            <p class="lead">Explore nuestras soluciones y encuentre la que mejor se adapte a su empresa.</p>
+                        </div>
+                        <div>
+                            <a class="btn btn-secondary" href="/shop">Ver todo <i class="oi ms-2" data-icon="east" role="img"/></a>
+                        </div>
+                    </section>
+                    <section class="s_dynamic_snippet_content oe_unremovable oe_unmovable o_not_editable col s_col_no_resize ">
+                        <div class="css_non_editable_mode_hidden">
+                            <div class="missing_option_warning alert alert-info fade show d-none d-print-none rounded-0">
+                                Su contenido dinámico aparecerá aquí... Este mensaje aparece porque no proporcionó suficientes opciones para recuperar su contenido.<br/>
+                            </div>
+                        </div>
+                        <div class="dynamic_snippet_template">
+                            
+        </div>
+                    </section>
+                </div>
+            </div>
+        </section><section class="s_references_tiles pt64 pb64" data-snippet="s_references_tiles">
+        <div class="container">
+            <div class="row o_grid_mode" data-row-count="4" style="gap: 8px;">
+                <div class="o_grid_item g-height-4 g-col-lg-5 col-lg-5 justify-content-center" style="grid-area: 1 / 1 / 5 / 6; z-index: 1;">
+                    <h2 class="h1-fs">Las <font style="color: rgb(125, 125, 125);">empresas líderes</font><br/>confían en nosotros</h2>
+                </div>
+                <div class="o_grid_item o_grid_item_image o_cc o_cc2 g-col-lg-2 g-height-2 col-6 col-lg-2" style="grid-area: 1 / 7 / 3 / 9; z-index: 2; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px;">
+                    <img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid" alt="" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image o_cc o_cc2 g-col-lg-2 g-height-2 col-6 col-lg-2" style="grid-area: 1 / 9 / 3 / 11; z-index: 3; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px;">
+                    <img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid" alt="" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image o_cc o_cc2 g-col-lg-2 g-height-2 col-6 col-lg-2" style="grid-area: 1 / 11 / 3 / 13; z-index: 4; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px;">
+                    <img src="/web/image/website.s_reference_demo_image_3" class="img img-fluid" alt="" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image o_cc o_cc2 g-col-lg-2 g-height-2 col-6 col-lg-2" style="grid-area: 3 / 7 / 5 / 9; z-index: 5; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px;">
+                    <img src="/web/image/website.s_reference_demo_image_4" class="img img-fluid" alt="" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image o_cc o_cc2 g-col-lg-2 g-height-2 col-6 col-lg-2" style="grid-area: 3 / 9 / 5 / 11; z-index: 6; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px;">
+                    <img src="/web/image/website.s_reference_demo_image_5" class="img img-fluid" alt="" loading="lazy"/>
+                </div>
+                <div class="o_grid_item o_grid_item_image o_cc o_cc2 g-col-lg-2 g-height-2 col-6 col-lg-2" style="grid-area: 3 / 11 / 5 / 13; z-index: 7; --grid-item-padding-y: 16px; --grid-item-padding-x: 16px;">
+                    <img src="/web/image/website.s_reference_default_image_6" class="img img-fluid" alt="" loading="lazy"/>
+                </div>
+            </div>
+        </div>
+    </section><section class="s_parallax parallax o_three_quarter_height" data-scroll-background-ratio="3" data-snippet="s_parallax">
+        <span class="s_parallax_bg_wrap">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.landscape_xl_2'); background-position: 50% 75%;"/>
+        </span>
+        <div class="o_we_bg_filter bg-black-25"/>
+        <div class="oe_structure oe_empty"/>
+    </section><section class="s_faq_collapse pt80 pb80" data-vcss="001" data-snippet="s_faq_collapse_centered">
+        <div class="container">
+            <div class="row align-items-start s_nb_column_fixed">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2 class="display-1-fs" style="text-align: center;">Preguntas<br/>frecuentes</h2>
+                    <p><br/></p>
+                </div>
+                <div class="col-lg-8 offset-lg-2 s_col_no_bgcolor" data-name="Accordion Box">
+    <div data-name="Accordion" class="s_accordion" data-snippet="s_accordion">
+        <div id="myCollapse" class="accordion-flush accordion">
+            <div class="accordion-item position-relative z-1" data-name="Accordion Item">
+                <button type="button" class="accordion-header accordion-button justify-content-between gap-2 bg-transparent h6-fs fw-bold text-decoration-none text-reset transition-none" data-bs-toggle="collapse" aria-expanded="true" id="accordion-button548600_1" data-bs-target="#myCollapseTab548600_1" aria-controls="myCollapseTab548600_1"><span class="flex-grow-1">¿Qué servicios de consultoría ofrece la empresa?</span></button>
+                <div class="accordion-collapse collapse show" data-bs-parent="#myCollapse" role="region" id="myCollapseTab548600_1" aria-labelledby="accordion-button548600_1">
+                    <div class="accordion-body">
+                        <p>Somos una consultora empresarial enfocada en estrategia, procesos y crecimiento. Diseñamos soluciones a la medida para impulsar la eficiencia, ordenar la operación y acompañar a cada negocio en su expansión sostenible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item position-relative z-1" data-name="Accordion Item">
+                <button type="button" class="accordion-header accordion-button collapsed justify-content-between gap-2 bg-transparent h6-fs fw-bold text-decoration-none text-reset transition-none" data-bs-toggle="collapse" aria-expanded="false" id="accordion-button548600_2" data-bs-target="#myCollapseTab548600_2" aria-controls="myCollapseTab548600_2"><span class="flex-grow-1">¿Cómo puedo contactar a un asesor?</span></button>
+                <div class="accordion-collapse collapse" data-bs-parent="#myCollapse" role="region" id="myCollapseTab548600_2" aria-labelledby="accordion-button548600_2">
+                    <div class="accordion-body">
+                        <p>Comuníquese con nuestro equipo de atención al cliente en info@yourcompany.example.com, llame al +1 555-555-5556 o use el chat disponible en nuestro sitio web. Nuestro equipo especializado está listo 24/7 para ayudarle con cualquier duda o necesidad.</p>
+                        <p>Nos comprometemos a ofrecerte respuestas ágiles y soluciones efectivas para que tu experiencia sea excelente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item position-relative z-1" data-name="Accordion Item">
+                <button type="button" class="accordion-header accordion-button collapsed justify-content-between gap-2 bg-transparent h6-fs fw-bold text-decoration-none text-reset transition-none" data-bs-toggle="collapse" aria-expanded="false" id="accordion-button548600_3" data-bs-target="#myCollapseTab548600_3" aria-controls="myCollapseTab548600_3"><span class="flex-grow-1">¿Qué servicios de consultoría ofrecen?</span></button>
+                <div class="accordion-collapse collapse" data-bs-parent="#myCollapse" role="region" id="myCollapseTab548600_3" aria-labelledby="accordion-button548600_3">
+                    <div class="accordion-body">
+                        <p>Ofrecemos una política de satisfacción de 30 días en nuestros servicios. Para solicitar ajustes o reembolsos, el proyecto debe conservar su alcance original y contar con comprobante de contratación. Las devoluciones se gestionan en 5-7 días hábiles tras la revisión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section></div>
+    </t>
+</t>

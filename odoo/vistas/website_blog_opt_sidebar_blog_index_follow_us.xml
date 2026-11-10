@@ -1,0 +1,10 @@
+<data name="Follow Us">
+    <xpath expr="//div[@id='o_wblog_sidebar']" position="inside">
+        <div class="o_wblog_sidebar_block pb-4" t-ignore="true">
+            <h2 class="h6">Follow Us</h2>
+            <t t-snippet-call="website.s_social_media" string="Social Media" _classes.f="no_icon_color oe_unremovable oe_unmovable" _icon_classes.f="rounded-circle o_sm_custom_size" _style.f="--fa-icon-size: 40px;"/>
+            <t t-call="website_mail.follow" t-if="blog" email="user_id.email" object="blog" div_class.f="pt-2"/>
+        </div>
+        <div class="oe_structure" id="oe_structure_blog_sidebar_index_3"/>
+    </xpath>
+</data>

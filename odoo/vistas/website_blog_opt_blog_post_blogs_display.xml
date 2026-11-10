@@ -1,0 +1,13 @@
+<data name="Blogs List">
+    <xpath expr="//div[@id='o_wblog_post_sidebar']" position="inside">
+        <div t-if="len(blogs) &gt; 1" class="o_wblog_sidebar_block mb-2 pb-4">
+            <h2 class="small mb-3">Our blogs</h2>
+            <ul class="list-unstyled small">
+                <li t-foreach="blogs" t-as="nav_blog" class="mb-2">
+                    <a t-attf-href="#{blog_url(blog=nav_blog, tag=False, date_begin=False, date_end=False)}" t-out="nav_blog.name"/>
+                </li>
+            </ul>
+        </div>
+        <div class="oe_structure" id="oe_structure_blog_post_sidebar_5"/>
+    </xpath>
+</data>

@@ -1,0 +1,13 @@
+<t name="Sidebar - Blog page" t-name="website_blog.sidebar_blog_index">
+    <div id="o_wblog_sidebar">
+        <div class="oe_structure" id="oe_structure_blog_sidebar_index_1"/>
+        <a t-if="blog" title="RSS" t-attf-href="/blog/#{slug(blog)}/feed" class="oi float-end" data-icon="rss_feed"/>
+        <div class="o_wblog_sidebar_block pb-4">
+            <h2 class="h6">About us</h2>
+            <div>
+                <p>Write a small text here to describe your blog or company.</p>
+            </div>
+        </div>
+        <div class="oe_structure" id="oe_structure_blog_sidebar_index_2"/>
+    </div>
+</t>

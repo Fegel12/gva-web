@@ -1,0 +1,5 @@
+<data name="About Us">
+    <xpath expr="//div[hasclass('o_wblog_sidebar_block')][1]" position="attributes">
+        <attribute name="class" add="d-none" separator=" "/>
+    </xpath>
+</data>

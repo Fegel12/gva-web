@@ -1,0 +1,9 @@
+<data name="Author">
+    <xpath expr="//div[@id='o_wblog_post_sidebar']" position="inside">
+        <div class="o_wblog_sidebar_block mb-2 pb-4">
+            <h2 class="small mb-3">Written by</h2>
+            <t t-call="website_blog.post_published_info" is_post_page.f="true" _additionnal_classes.f="d-flex align-items-center" opt_posts_loop_show_author.f="True" opt_posts_loop_show_date.f="True"/>
+        </div>
+        <div class="oe_structure" id="oe_structure_blog_post_sidebar_2"/>
+    </xpath>
+</data>

@@ -1,0 +1,21 @@
+<data name="Tags List">
+    <xpath expr="//div[@id='o_wblog_sidebar']" position="inside">
+        <div t-if="other_tags or tag_category" class="o_wblog_sidebar_block pb-4">
+            <h2 class="h6">Tags</h2>
+            <div t-attf-class="d-flex flex-wrap #{tag_category and 'flex-column gap-2' or 'gap-1'}">
+                <div t-foreach="tag_category" t-as="nav_tag_category">
+                    <t t-call="website_blog.tags_list" categ_title="nav_tag_category.name" tags="tags_by_category.get(nav_tag_category.id, [])" showInactive="True"/>
+                </div>
+                <div>
+                    <t t-call="website_blog.tags_list" hide_title="not len(tag_category)" categ_title.translate="Others" tags="other_tags" showInactive="True"/>
+                </div>
+            </div>
+        </div>
+
+        <div t-else="" groups="website_blog.group_website_blog_manager" class="o_wblog_sidebar_block pb-4">
+            <h2 class="h6">Tags</h2>
+            <em t-ignore="True" class="text-muted">No tags defined yet.</em>
+        </div>
+        <div class="oe_structure" id="oe_structure_blog_sidebar_index_5"/>
+    </xpath>
+</data>
