@@ -207,8 +207,7 @@ CASOS = f1.hero("13", "Resultados y aprendizajes de proyectos documentados.",
     <div class="col-6 col-md-4 col-lg-3 text-center"><img loading="eager" style="height:64px;width:auto;filter:grayscale(100%)" src="/web/image/1620" alt="Laboratorio Espinosa Gómez"></div>
     <div class="col-6 col-md-4 col-lg-3 text-center"><img loading="eager" style="height:64px;width:auto;filter:grayscale(100%)" src="/web/image/1621" alt="Camacol"></div>
     <div class="col-6 col-md-4 col-lg-3 text-center"><img loading="eager" style="height:64px;width:auto;filter:grayscale(100%)" src="/web/image/1622" alt="Estrategas en Formación"></div>
-    <div class="col-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-center" style="min-height:70px">
-      <span style="font-family:Inter,sans-serif;font-weight:700;letter-spacing:.14em;color:#4B5563;font-size:.95rem">SCHINDLER</span></div>
+    <div class="col-6 col-md-4 col-lg-3 text-center"><img loading="eager" style="height:64px;width:auto;filter:grayscale(100%)" src="/web/image/1638" alt="Schindler"></div>
   </div>""") + f1.banda("¿Su empresa se parece a alguno de estos casos?",
                        "Cuéntenos su situación y le decimos qué revisaríamos primero.")
 
