@@ -266,7 +266,7 @@ SERV = ESTILO + '<div class="gva">' + seccion(f"""
   <p class="eyebrow mb-2">Servicios</p>
   <h1 class="display-6 fw-bold mb-3" style="max-width:800px">Seis líneas de servicio que se combinan según su empresa</h1>
   <p class="lead" style="max-width:800px">No vendemos paquetes cerrados. Revisamos su situación, identificamos qué le
-    está costando dinero o tiempo, y armamos el trabajo con alcance y honorarios claros.</p>""") + \
+    está costando dinero o tiempo, y armamos el encargo con alcance y honorarios claros.</p>""") + \
     SERVICIOS_LIMPIO + seccion(f"""
   <div class="row g-5">
     <div class="col-lg-6">

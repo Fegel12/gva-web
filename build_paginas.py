@@ -156,7 +156,7 @@ FIRMA = """
       <h2>Quién responde</h2>
       <p class="lead">Edgar Fernando Gelvis Vega · Director</p>
       <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los encargos de auditoría, planeación tributaria y analítica.</p>
-      <p>La firma trabaja con un equipo de contadores y analistas que conoce el sector de cada cliente: salud, industria, servicios, transporte, inmobiliario y cultura.</p>
+      <p>La firma cuenta con un equipo de contadores y analistas que conoce el sector de cada cliente: salud, industria, servicios, transporte, inmobiliario y cultura.</p>
     </div>
     <div>
       <h2>La firma</h2>
@@ -179,8 +179,8 @@ SERV = """
 <section>
   <div class="wrap">
     <span class="eyebrow">Servicios</span>
-    <h1 style="max-width:760px">Seis líneas de trabajo que se combinan según su empresa</h1>
-    <p class="lead" style="max-width:780px">No vendemos paquetes cerrados. Revisamos su situación, identificamos qué le está costando dinero o tiempo, y armamos el trabajo con alcance y honorarios claros.</p>
+    <h1 style="max-width:760px">Seis líneas de servicio que se combinan según su empresa</h1>
+    <p class="lead" style="max-width:780px">No vendemos paquetes cerrados. Revisamos su situación, identificamos qué le está costando dinero o tiempo, y armamos el encargo con alcance y honorarios claros.</p>
   </div>
 </section>
 
