@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta · Metodología interactiva</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --tq:#00B7B5; --tqt:#007A78; --vd:#00B140; --gr:#2E3540; --gris:#6B7280; --linea:#E4E9EF; }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter,'Segoe UI',system-ui,sans-serif;color:var(--gr);background:#fff}
+  .franja{background:#F6F8FA;padding:64px 24px 72px}
+  .cont{max-width:1180px;margin:0 auto}
+  .rot{display:block;text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.16em;color:var(--tqt);text-transform:uppercase;margin-bottom:12px}
+  h2.tit{text-align:center;font-size:2rem;line-height:1.2;font-weight:700;margin:0 0 10px}
+  p.sub{text-align:center;color:var(--gris);max-width:640px;margin:0 auto 42px;font-size:1rem}
+
+  /* recorrido */
+  .via{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .via::before{content:"";position:absolute;top:31px;left:12.5%;right:12.5%;height:2px;
+    background:linear-gradient(90deg,var(--tq),#9FE8E1 55%,var(--linea));z-index:0}
+  .est{position:relative;z-index:1;padding:0 10px}
+  .est>details{background:transparent}
+  .est>details>summary{list-style:none;cursor:pointer;text-align:center}
+  .est>details>summary::-webkit-details-marker{display:none}
+  .bola{width:62px;height:62px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;
+    background:#fff;border:2px solid var(--linea);color:var(--gris);font-weight:700;font-size:1.05rem;
+    transition:.22s ease;position:relative}
+  .est>details[open] .bola{background:var(--tq);border-color:var(--tq);color:#fff;
+    box-shadow:0 12px 26px rgba(0,183,181,.34)}
+  .est>details[open] .bola::after{content:"";position:absolute;inset:-8px;border-radius:50%;
+    border:2px solid rgba(0,183,181,.32)}
+  .nom{font-size:.98rem;font-weight:600;margin:0 0 4px}
+  .est>details[open] .nom{color:var(--tqt)}
+  .mini{font-size:.82rem;color:var(--gris);margin:0}
+  .pista{font-size:.72rem;font-weight:600;color:var(--tqt);margin-top:9px;display:inline-block}
+  .pista .mas{font-weight:700}
+  .est>details[open] .pista .mas{display:none}
+  .est>details[open] .pista .cer{display:inline}
+  .pista .cer{display:none}
+
+  /* panel */
+  .panel{background:#fff;border:1px solid var(--linea);border-radius:16px;margin-top:16px;padding:18px 18px 16px;
+    text-align:left;box-shadow:0 16px 34px rgba(26,60,70,.09);animation:abre .24s ease}
+  @keyframes abre{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+  .panel .fila{display:flex;gap:9px;margin-bottom:11px;font-size:.84rem;line-height:1.45}
+  .panel .fila:last-of-type{margin-bottom:14px}
+  .panel .k{flex:0 0 auto;width:19px;height:19px;border-radius:6px;display:flex;align-items:center;justify-content:center;
+    font-size:.66rem;font-weight:700;color:#fff;margin-top:2px}
+  .k.h{background:var(--tq)} .k.n{background:#7C8B99} .k.r{background:var(--vd)}
+  .panel .fila b{display:block;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-bottom:2px}
+  .entrega{display:inline-flex;align-items:center;gap:6px;background:#E6F7F5;color:var(--tqt);
+    font-size:.72rem;font-weight:700;padding:6px 12px;border-radius:999px}
+  @media (max-width:900px){
+    .via{grid-template-columns:1fr;gap:6px}
+    .via::before{display:none}
+    .est{padding:0}
+    .est>details>summary{text-align:left;display:flex;align-items:center;gap:14px;padding:8px 0}
+    .bola{margin:0;width:52px;height:52px;flex:0 0 52px}
+    .cab{flex:1}
+    .pista{margin-top:2px}
+    h2.tit{font-size:1.5rem}
+  }
+</style>
+</head>
+<body>
+<section class="franja">
+  <div class="cont">
+    <span class="rot">Cómo operamos</span>
+    <h2 class="tit">Entendemos, analizamos, recomendamos y acompañamos</h2>
+    <p class="sub">Ninguna etapa se salta. Cada una termina con algo que queda en sus manos.</p>
+
+    <div class="via">
+      <div class="est"><details open>
+        <summary><span class="bola">1</span><div class="cab"><p class="nom">Entendemos</p><p class="mini">Su negocio y su cifra</p><span class="pista">Ver detalle <span class="mas">+</span><span class="cer">–</span></span></div></summary>
+        <div class="panel">
+          <div class="fila"><span class="k h">1</span><div><b>Qué hacemos</b>Revisamos cómo se produce la información y dónde se rompe.</div></div>
+          <div class="fila"><span class="k n">2</span><div><b>Qué necesitamos</b>Estados financieros, auxiliares y una persona que decida.</div></div>
+          <div class="entrega">✓ Diagnóstico por escrito</div>
+        </div>
+      </details></div>
+
+      <div class="est"><details>
+        <summary><span class="bola">2</span><div class="cab"><p class="nom">Analizamos</p><p class="mini">Pruebas y evidencia</p><span class="pista">Ver detalle <span class="mas">+</span><span class="cer">–</span></span></div></summary>
+        <div class="panel">
+          <div class="fila"><span class="k h">1</span><div><b>Qué hacemos</b>Probamos las cifras contra el soporte y contra la norma.</div></div>
+          <div class="fila"><span class="k n">2</span><div><b>Qué necesitamos</b>Acceso a los documentos originales, no a resúmenes.</div></div>
+          <div class="entrega">✓ Hallazgos con evidencia</div>
+        </div>
+      </details></div>
+
+      <div class="est"><details>
+        <summary><span class="bola">3</span><div class="cab"><p class="nom">Recomendamos</p><p class="mini">Qué hacer y en qué orden</p><span class="pista">Ver detalle <span class="mas">+</span><span class="cer">–</span></span></div></summary>
+        <div class="panel">
+          <div class="fila"><span class="k h">1</span><div><b>Qué hacemos</b>Priorizamos: qué corrige el riesgo y qué puede esperar.</div></div>
+          <div class="fila"><span class="k n">2</span><div><b>Qué necesitamos</b>Saber quién ejecuta cada corrección dentro de su empresa.</div></div>
+          <div class="entrega">✓ Plan con responsables y fechas</div>
+        </div>
+      </details></div>
+
+      <div class="est"><details>
+        <summary><span class="bola">4</span><div class="cab"><p class="nom">Acompañamos</p><p class="mini">Que la corrección se sostenga</p><span class="pista">Ver detalle <span class="mas">+</span><span class="cer">–</span></span></div></summary>
+        <div class="panel">
+          <div class="fila"><span class="k h">1</span><div><b>Qué hacemos</b>Verificamos que la corrección quedó y no vuelve a abrirse.</div></div>
+          <div class="fila"><span class="k n">2</span><div><b>Qué necesitamos</b>Que el proceso cambie, no solo el informe.</div></div>
+          <div class="entrega">✓ Seguimiento y cierre</div>
+        </div>
+      </details></div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
