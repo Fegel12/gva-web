@@ -103,7 +103,7 @@ HERO = f"""
 PILARES = seccion(f"""
   <div class="text-center mb-5">
     <p class="eyebrow mb-1">Nuestros pilares</p>
-    <h2 class="h1">Cuatro ideas sostienen cada trabajo que entregamos</h2>
+    <h2 class="h1">Cuatro ideas sostienen cada encargo que entregamos</h2>
   </div>
   <div class="row g-4">
     <div class="col-md-6 col-lg-3"><div class="gva-card gva-pilar"><div class="gva-ico">👥</div>
@@ -137,7 +137,7 @@ SERVICIOS = seccion(f"""
   <div class="text-center mb-5">
     <p class="eyebrow mb-1">Servicios</p>
     <h2 class="h1">Todo lo contable, tributario y tecnológico, en una sola firma</h2>
-    <p class="lead">Seis líneas de trabajo que se combinan según el tamaño y el momento de su empresa.</p>
+    <p class="lead">Seis líneas de servicio que se combinan según el tamaño y el momento de su empresa.</p>
   </div>
   <div class="row g-4">
     {tarjeta("Outsourcing contable y BPO financiero",
@@ -163,7 +163,7 @@ SERVICIOS = seccion(f"""
 
 PASOS = seccion(f"""
   <div class="text-center mb-5">
-    <p class="eyebrow mb-1">Cómo trabajamos</p>
+    <p class="eyebrow mb-1">Cómo operamos</p>
     <h2 class="h1">Tres pasos, siempre con el mismo estándar</h2>
   </div>
   <div class="row g-4">
@@ -209,7 +209,7 @@ FIRMA = ESTILO + '<div class="gva">' + seccion(f"""
     <div class="col-lg-6">
       <h2 class="h3 mb-3">Nuestra historia</h2>
       <p>Su fundador, Edgar Fernando Gelvis Vega, es contador público especialista en impuestos y magíster en
-        análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo trabajo.</p>
+        análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo encargo.</p>
       <p>Desde el inicio de su carrera ha sostenido una política que hoy es el ADN de GVA Group:
         <strong>todo debe estar sustentado en datos</strong>. Una cifra sin soporte es una opinión;
         una cifra con soporte es una decisión.</p>
@@ -238,8 +238,8 @@ FIRMA = ESTILO + '<div class="gva">' + seccion(f"""
       <h2 class="h3 mb-2">Quién responde</h2>
       <p class="lead mb-2">Edgar Fernando Gelvis Vega · Director</p>
       <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los
-        trabajos de auditoría, planeación tributaria y analítica.</p>
-      <p>La firma trabaja con un equipo de contadores y analistas que conoce el sector de cada cliente:
+        encargos de auditoría, planeación tributaria y analítica.</p>
+      <p>La firma cuenta con un equipo de contadores y analistas que conoce el sector de cada cliente:
         salud, industria, servicios, transporte, inmobiliario y cultura.</p>
     </div>
     <div class="col-lg-6">
@@ -259,12 +259,12 @@ FIRMA = ESTILO + '<div class="gva">' + seccion(f"""
 SERVICIOS_LIMPIO = SERVICIOS.replace('<p class="eyebrow mb-1">Servicios</p>', '')
 SERVICIOS_LIMPIO = SERVICIOS_LIMPIO.replace('<h2 class="h1">Todo lo contable, tributario y tecnológico, en una sola firma</h2>',
                                             '<h2 class="h1">Portafolio de servicios</h2>')
-SERVICIOS_LIMPIO = SERVICIOS_LIMPIO.replace('<p class="lead">Seis líneas de trabajo que se combinan según el tamaño y el momento de su empresa.</p>',
+SERVICIOS_LIMPIO = SERVICIOS_LIMPIO.replace('<p class="lead">Seis líneas de servicio que se combinan según el tamaño y el momento de su empresa.</p>',
                                             '<p class="lead">Cada línea se adapta al tamaño y al momento de su empresa.</p>')
 
 SERV = ESTILO + '<div class="gva">' + seccion(f"""
   <p class="eyebrow mb-2">Servicios</p>
-  <h1 class="display-6 fw-bold mb-3" style="max-width:800px">Seis líneas de trabajo que se combinan según su empresa</h1>
+  <h1 class="display-6 fw-bold mb-3" style="max-width:800px">Seis líneas de servicio que se combinan según su empresa</h1>
   <p class="lead" style="max-width:800px">No vendemos paquetes cerrados. Revisamos su situación, identificamos qué le
     está costando dinero o tiempo, y armamos el trabajo con alcance y honorarios claros.</p>""") + \
     SERVICIOS_LIMPIO + seccion(f"""
@@ -290,8 +290,8 @@ SERV = ESTILO + '<div class="gva">' + seccion(f"""
 CASOS = ESTILO + '<div class="gva">' + seccion(f"""
   <p class="eyebrow mb-2">Casos de éxito</p>
   <h1 class="display-6 fw-bold mb-3" style="max-width:820px">Trabajos con nombre propio, no promesas genéricas</h1>
-  <p class="lead" style="max-width:820px">Trabajamos con empresas de salud, industria, servicios, cultura y gremios.
-    Por confidencialidad, el detalle de cada trabajo se comparte en la conversación y siempre con autorización del cliente.</p>""") + \
+  <p class="lead" style="max-width:820px">Acompañamos a empresas de salud, industria, servicios, cultura y gremios.
+    Por confidencialidad, el detalle de cada encargo se comparte en la conversación y siempre con autorización del cliente.</p>""") + \
     seccion(f"""
   <table class="gva-tabla w-100">
     <tr><td><strong>Sector salud</strong></td><td>Clínica ISIS · Laboratorio Espinosa Gómez</td></tr>
@@ -398,7 +398,7 @@ FIRMA2 = ESTILO.replace('</style>', ESTILO_EXTRA + '</style>') + '<div class="gv
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
         <p class="eyebrow mb-2">Nuestra firma</p>
-        <h1 class="display-5 fw-bold mb-3">Contaduría, impuestos y datos en el mismo trabajo.</h1>
+        <h1 class="display-5 fw-bold mb-3">Contaduría, impuestos y datos en el mismo encargo.</h1>
         <p class="lead mb-0">GVA Group nace de una convicción: lo financiero y lo tributario no tienen que ser
           complejos si se miran a través de los datos.</p>
       </div>
@@ -413,7 +413,7 @@ FIRMA2 = ESTILO.replace('</style>', ESTILO_EXTRA + '</style>') + '<div class="gv
     <div class="col-lg-6">
       <h2 class="h3 mb-3">Nuestra historia</h2>
       <p>El fundador, Edgar Fernando Gelvis Vega, es contador público especialista en impuestos y magíster en
-        análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo trabajo.</p>
+        análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo encargo.</p>
       <p>Desde el inicio de su carrera ha sostenido una política que hoy es el ADN de GVA Group:
         <strong>todo debe estar sustentado en datos</strong>. Una cifra sin soporte es una opinión;
         una cifra con soporte es una decisión.</p>
@@ -446,8 +446,8 @@ FIRMA2 = ESTILO.replace('</style>', ESTILO_EXTRA + '</style>') + '<div class="gv
     <div class="col-lg-8">
       <h2 class="h3 mb-3">Quién responde</h2>
       <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los
-        trabajos de auditoría, planeación tributaria y analítica.</p>
-      <p>La firma trabaja con un equipo de contadores y analistas que conoce el sector de cada cliente:
+        encargos de auditoría, planeación tributaria y analítica.</p>
+      <p>La firma cuenta con un equipo de contadores y analistas que conoce el sector de cada cliente:
         salud, industria, servicios, transporte, inmobiliario y cultura.</p>
       <table class="gva-tabla w-100">
         <tr><td>Razón social</td><td>GVA GROUP S.A.S.</td></tr>

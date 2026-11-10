@@ -31,7 +31,7 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
     <p class="eyebrow mb-2">Qué hacemos</p>
     <p style="font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.55;color:#2E3540;font-weight:500;margin:0">
       En GVA Group las cifras de su empresa se sostienen. Auditamos, ordenamos los procesos que las producen y
-      automatizamos lo repetitivo: menos retrabajo, riesgos vistos a tiempo y decisiones con evidencia.
+      automatizamos lo repetitivo: menos reproceso, riesgos vistos a tiempo y decisiones con evidencia.
       <strong>Contabilidad, impuestos, finanzas y datos, sobre una misma base.</strong>
     </p>
   </div></div>""") + f1.bloque(f"""
@@ -40,7 +40,7 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
       <p class="eyebrow mb-1">Nuestra historia</p>
       <h2 class="h3 mb-3">Lo financiero y lo tributario no tienen que ser complejos si se miran a través de los datos</h2>
       <p>El fundador, Edgar Fernando Gelvis Vega, es contador público especialista en impuestos y magíster en
-        análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo trabajo.</p>
+        análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo encargo.</p>
       <p>Desde el inicio de su carrera ha sostenido una política que hoy es el ADN de GVA Group:
         <strong>todo debe estar sustentado en datos</strong>. Una cifra sin soporte es una opinión;
         una cifra con soporte es una decisión.</p>
@@ -74,7 +74,7 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
       <h2 class="h3 mb-2">Quién responde</h2>
       <p class="lead mb-2">Edgar Fernando Gelvis Vega · Director</p>
       <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los
-        trabajos de auditoría, planeación tributaria y analítica.</p>
+        encargos de auditoría, planeación tributaria y analítica.</p>
       <p class="mb-0">El equipo conoce el sector de cada cliente: salud, industria, servicios, transporte,
         inmobiliario y cultura.</p>
     </div>
@@ -92,13 +92,13 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
         </table></div>
     </div>
   </div>""") + f1.pruebas([
-    "Metodología documentada en cada trabajo.",
+    "Metodología documentada en cada encargo.",
     "Informes con fuente, fecha y responsable.",
     "Datos del cliente tratados con reserva profesional.",
 ]) + f1.bloque("""
   <div class="row g-5">
     <div class="col-lg-6">
-      <p class="eyebrow mb-1">Cómo trabajamos</p>
+      <p class="eyebrow mb-1">Cómo operamos</p>
       <h2 class="h3 mb-3">Escuchamos antes de proponer</h2>
       <p>Preguntamos lo incómodo temprano: qué no está documentado, quién depende de quién, qué pasaría si esa
         persona falta. Esas preguntas molestan al principio y ahorran problemas después.</p>
@@ -119,7 +119,7 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
           Sin eso, ninguna puede.</p>
       </div>
     </div>
-  </div>""") + f1.banda("Conozca cómo trabajamos", "Una conversación de diagnóstico, sin costo.")
+  </div>""") + f1.banda("Conozca cómo operamos", "Una conversación de diagnóstico, sin costo.")
 
 pagina("nuestra-firma", "Nuestra firma | GVA Group",
        "GVA Group: contaduría, impuestos y ciencia de datos. Misión, visión, valores y dirección de la firma.",
@@ -135,7 +135,7 @@ FORMACION = f1.hero("10", "Aprendizaje aplicado para equipos y profesionales.",
   <div class="row g-4">
     """ + f1.tarjeta("Curso en línea", "Lecciones cortas, con ejemplos y ejercicios sobre casos reales de empresa.", "Estudie a su ritmo", "▶")
     + f1.tarjeta("Capacitación en su empresa", "Actualización tributaria y contable en sus instalaciones, hasta grupos de cinco personas.", "Presencial", "◇")
-    + f1.tarjeta("Acompañamiento técnico", "Sesiones de trabajo con su equipo sobre un caso concreto: cierre, reforma o implementación.", "Aplicado", "◎")
+    + f1.tarjeta("Acompañamiento técnico", "Sesiones de acompañamiento con su equipo sobre un caso concreto: cierre, reforma o implementación.", "Aplicado", "◎")
     + """</div>
 </section>""") + f1.bloque("""
   <div class="row g-5 align-items-center">
@@ -144,7 +144,7 @@ FORMACION = f1.hero("10", "Aprendizaje aplicado para equipos y profesionales.",
       <h2 class="h3 mb-3">Primero el criterio, después la herramienta</h2>
       <ul class="gva-lista">
         <li>Cada tema con su norma, su fecha y su fuente.</li>
-        <li>Ejemplos con cifras de trabajo, no con teoría suelta.</li>
+        <li>Ejemplos con cifras reales, no con teoría suelta.</li>
         <li>Ejercicios que se corrigen y se explican.</li>
         <li>Material actualizado cuando cambia la norma.</li>
       </ul>
@@ -166,13 +166,13 @@ pagina("formacion", "Formación | GVA Group",
 
 # ------------------------------------------------------------------ CASOS DE EXITO
 CASOS = f1.hero("13", "Resultados y aprendizajes de proyectos documentados.",
-                "Trabajamos con empresas de salud, industria, servicios, cultura y gremios. Por confidencialidad, "
+                "Acompañamos a empresas de salud, industria, servicios, cultura y gremios. Por confidencialidad, "
                 "el detalle se comparte en la conversación y siempre con autorización del cliente.",
                 "Ver experiencias", "#sectores") + f1.bloque("""
   <div class="row g-5" id="sectores">
     <div class="col-lg-7">
-      <p class="eyebrow mb-1">Dónde hemos trabajado</p>
-      <h2 class="h3 mb-3">Sectores y tipo de trabajo</h2>
+      <p class="eyebrow mb-1">Sectores que hemos atendido</p>
+      <h2 class="h3 mb-3">Sectores y tipo de encargo</h2>
       <table class="table" style="font-size:.95rem">
         <tr><td style="width:34%;color:#4B5563"><strong>Salud</strong></td><td>Clínica ISIS · Laboratorio Espinosa Gómez</td></tr>
         <tr><td style="color:#4B5563"><strong>Industria y consumo</strong></td><td>Pintuco · Indumuebles · Alsina</td></tr>
@@ -181,7 +181,7 @@ CASOS = f1.hero("13", "Resultados y aprendizajes de proyectos documentados.",
       </table>
     </div>
     <div class="col-lg-5"><div class="gva-nota">
-      Publicamos el detalle de un caso solo con autorización escrita del cliente: situación, trabajo realizado
+      Publicamos el detalle de un caso solo con autorización escrita del cliente: situación, servicio realizado
       y resultado. Mientras no exista esa autorización, el caso se conversa, no se publica.
     </div></div>
   </div>""") + f1.bloque("""
@@ -212,12 +212,12 @@ CASOS = f1.hero("13", "Resultados y aprendizajes de proyectos documentados.",
                        "Cuéntenos su situación y le decimos qué revisaríamos primero.")
 
 pagina("casos-de-exito", "Casos de éxito | GVA Group",
-       "Sectores y empresas que trabajan con GVA Group: salud, industria, cultura, servicios y gremios.",
+       "Sectores y empresas que confían en GVA Group: salud, industria, cultura, servicios y gremios.",
        CASOS)
 
 # ------------------------------------------------------------------ PUBLICACIONES (hub)
 PUBLICACIONES = f1.hero("12", "Ideas, análisis y conocimiento para estar mejor informado.",
-                        "Publicamos lo que aprendemos trabajando con empresas colombianas: cifras con soporte, "
+                        "Publicamos lo que aprendemos acompañando empresas colombianas: cifras con soporte, "
                         "normas explicadas sin rodeos y decisiones que se pueden sustentar.",
                         "Leer el blog", "/blog") + f1.bloque("""
   <div class="row g-4">
@@ -255,7 +255,7 @@ INVESTIGACION = f1.hero("11", "Análisis técnico y normativo con trazabilidad d
                         "Cada afirmación con su fuente, su fecha y su jurisdicción. Sin conclusiones que no se "
                         "puedan verificar.",
                         "Consultar publicaciones", "/contacto") + f1.bloque("""
-  <div class="text-center mb-5"><p class="eyebrow mb-1">Líneas de trabajo</p>
+  <div class="text-center mb-5"><p class="eyebrow mb-1">Líneas de investigación</p>
     <h2 class="h1">Qué investigamos</h2></div>
   <div class="row g-4">
     """ + f1.tarjeta("Cambios normativos", "Qué cambió, desde cuándo rige y a quién afecta.", "Tributario", "1")

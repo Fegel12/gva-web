@@ -123,7 +123,7 @@ FIRMA = """
   <div class="wrap dos-col">
     <div>
       <h2>Nuestra historia</h2>
-      <p>Su fundador, Edgar Fernando Gelvis Vega, es contador público especialista en impuestos y magíster en análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo trabajo.</p>
+      <p>Su fundador, Edgar Fernando Gelvis Vega, es contador público especialista en impuestos y magíster en análisis de datos. Esa combinación define la firma: rigor normativo y capacidad analítica en el mismo encargo.</p>
       <p>Desde el inicio de su carrera ha sostenido una política que hoy es el ADN de GVA Group: <strong>todo debe estar sustentado en datos</strong>. Una cifra sin soporte es una opinión; una cifra con soporte es una decisión.</p>
       <p>Por eso cada mensaje, propuesta o informe se respalda con evidencia verificable, y traducimos lo técnico a un lenguaje que el cliente entiende y puede usar.</p>
     </div>
@@ -155,7 +155,7 @@ FIRMA = """
     <div>
       <h2>Quién responde</h2>
       <p class="lead">Edgar Fernando Gelvis Vega · Director</p>
-      <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los trabajos de auditoría, planeación tributaria y analítica.</p>
+      <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los encargos de auditoría, planeación tributaria y analítica.</p>
       <p>La firma trabaja con un equipo de contadores y analistas que conoce el sector de cada cliente: salud, industria, servicios, transporte, inmobiliario y cultura.</p>
     </div>
     <div>
@@ -260,7 +260,7 @@ CASOS = """
   <div class="wrap">
     <span class="eyebrow">Casos de éxito</span>
     <h1 style="max-width:780px">Trabajos con nombre propio, no promesas genéricas</h1>
-    <p class="lead" style="max-width:800px">Trabajamos con empresas de salud, industria, servicios, cultura y gremios. Por confidencialidad, el detalle de cada trabajo se comparte en la conversación y siempre con autorización del cliente.</p>
+    <p class="lead" style="max-width:800px">Acompañamos a empresas de salud, industria, servicios, cultura y gremios. Por confidencialidad, el detalle de cada encargo se comparte en la conversación y siempre con autorización del cliente.</p>
   </div>
 </section>
 
@@ -395,7 +395,7 @@ page("servicios.html", "Servicios | GVA Group",
      SERV, 3)
 
 page("casos.html", "Casos de éxito | GVA Group",
-     "Sectores y empresas que trabajan con GVA Group: salud, industria, cultura y servicios.",
+     "Sectores y empresas que confían en GVA Group: salud, industria, cultura y servicios.",
      CASOS, 4)
 
 page("contacto.html", "Contacto | GVA Group",

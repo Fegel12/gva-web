@@ -135,7 +135,7 @@ INICIO = hero("01", "Conocimiento que genera confianza. Soluciones que transform
               "Conozca nuestros servicios", "/servicios") + bloque("""
   <div class="text-center mb-5">
     <p class="eyebrow mb-1">Capacidades</p>
-    <h2 class="h1">Seis frentes de trabajo, un mismo estándar de evidencia</h2>
+    <h2 class="h1">Seis frentes de servicio, un mismo estándar de evidencia</h2>
   </div>
   <div class="row g-4">
     """ + tarjeta("Auditoría y control", "Evaluación independiente del control interno y de los estados financieros, con hallazgos priorizados por riesgo.", "Ver auditoría", "✓")
@@ -147,7 +147,7 @@ INICIO = hero("01", "Conocimiento que genera confianza. Soluciones que transform
     + """</div>
 </section>""") + bloque("""
   <div class="text-center mb-5">
-    <p class="eyebrow mb-1">Cómo trabajamos</p>
+    <p class="eyebrow mb-1">Cómo operamos</p>
     <h2 class="h1">Entendemos, analizamos, recomendamos y acompañamos</h2>
   </div>
   <div class="row g-4">
@@ -173,7 +173,7 @@ INICIO = hero("01", "Conocimiento que genera confianza. Soluciones que transform
       </ul>
     </div>
   </div>""") + pruebas([
-    "Metodología documentada en cada trabajo.",
+    "Metodología documentada en cada encargo.",
     "Hallazgos con evidencia y trazabilidad.",
     "Informes con fuente, fecha y responsable.",
 ]) + banda("Conversemos sobre las necesidades de su empresa",
@@ -218,7 +218,7 @@ SERVICIOS = hero("03", "Soluciones integradas para retos empresariales complejos
   </div>
 </div></section>""" + pruebas([
     "Alcance y entregables por escrito antes de empezar.",
-    "Honorarios cerrados por trabajo, no por sorpresa.",
+    "Honorarios cerrados por encargo, no por sorpresa.",
     "Informes con hallazgos priorizados por riesgo.",
 ]) + banda("¿Por dónde empezamos?", "Cuéntenos su situación y le proponemos el primer paso.")
 
@@ -240,7 +240,7 @@ def servicio(nombre, img, h1, lead, problema, valor, metodo, prueba_puntos, rela
     <div class="col-lg-5"><div class="gva-nota">{problema[3]}</div></div>
   </div>""") + bloque(f"""
   <div class="text-center mb-5"><p class="eyebrow mb-1">Oferta de valor</p>
-    <h2 class="h1">Qué incluye el trabajo</h2></div>
+    <h2 class="h1">Qué recibe su empresa</h2></div>
   <div class="row g-4">{valor}</div>""", "gva-suave pt-5 pb-5") + bloque(f"""
   <div class="text-center mb-5"><p class="eyebrow mb-1">Metodología</p>
     <h2 class="h1">Cómo lo hacemos</h2></div>
@@ -263,7 +263,7 @@ servicio(
     ("Cuando el control es débil, el número deja de ser confiable",
      "Una cifra sin soporte es una opinión. Cuando los procesos no están documentados, la información se "
      "vuelve difícil de defender ante una junta, un banco o una autoridad.",
-     "La auditoría no busca culpables: busca que la información resista preguntas. Ese es el estándar con el que trabajamos.",
+     "La auditoría no busca culpables: busca que la información resista preguntas. Ese es el estándar que aplicamos.",
      "Este servicio no sustituye la revisoría fiscal cuando la ley la exige; sí la complementa y prepara la evidencia."),
     tarjeta("Diagnóstico de control interno", "Evaluamos ciclos de ingresos, compras, nómina y tesorería con pruebas selectivas.", "Punto de partida", "1")
     + tarjeta("Auditoría de estados financieros", "Revisión de saldos, soportes y políticas contables aplicadas.", "Para juntas y bancos", "2")
@@ -276,8 +276,8 @@ servicio(
     + paso(3, "Informe", "Hallazgos, efecto y prioridad. Sin tecnicismos innecesarios.")
     + paso(4, "Cierre", "Acompañamiento hasta que cada recomendación queda implementada."),
     ["Alcance definido por escrito y aceptado antes de iniciar.",
-     "Papeles de trabajo disponibles para revisión del cliente.",
-     "Independencia declarada cuando el trabajo lo exige."],
+     "Documentos de soporte disponibles para revisión del cliente.",
+     "Independencia declarada cuando el encargo lo exige."],
     [("Tributación", "/tributacion"), ("Finanzas y analítica", "/finanzas"),
      ("Riesgos y cumplimiento", "/riesgos-y-cumplimiento"), ("Servicios", "/servicios")])
 
@@ -340,14 +340,14 @@ servicio(
     ("Las decisiones grandes se toman sin método",
      "Abrir una sede, cambiar de proveedor, contratar un canal nuevo o entrar a otro mercado son decisiones "
      "que comprometen caja y tiempo. Sin diagnóstico previo, se decide por intuición.",
-     "Nuestro trabajo es poner el problema en números y comparar opciones con criterios explícitos.",
+     "Nuestra labor es poner el problema en números y comparar opciones con criterios explícitos.",
      "No garantizamos resultados: garantizamos método, evidencia y seguimiento."),
     tarjeta("Diagnóstico empresarial", "Revisión de operación, finanzas y mercado con hallazgos priorizados.", "Punto de partida", "1")
     + tarjeta("Opciones estratégicas", "Alternativas comparadas por costo, riesgo y tiempo de retorno.", "Decisión", "2")
     + tarjeta("Modelo económico", "Qué tiene que pasar en ventas y costos para que la apuesta funcione.", "Viabilidad", "3")
     + tarjeta("Plan de implementación", "Responsables, hitos y presupuesto por etapa.", "Ejecución", "4")
     + tarjeta("Tablero de seguimiento", "Indicadores acordados para medir el avance real.", "Control", "5")
-    + tarjeta("Acompañamiento a la dirección", "Sesiones de trabajo con el equipo directivo.", "Cercanía", "6"),
+    + tarjeta("Acompañamiento a la dirección", "Sesiones de acompañamiento con el equipo directivo.", "Cercanía", "6"),
     paso(1, "Diagnóstico", "Entendemos el negocio y sus restricciones reales.")
     + paso(2, "Opciones", "Comparamos alternativas con supuestos explícitos.")
     + paso(3, "Decisión", "La dirección elige; nosotros dejamos el sustento por escrito.")
@@ -366,7 +366,7 @@ servicio(
     ("Operar con el exterior sin mapa tributario y cambiario",
      "Importar, exportar, pagar servicios desde el exterior o recibir inversión implica obligaciones "
      "distintas en cada operación. Un error de clasificación se convierte en contingencia cambiaria o fiscal.",
-     "Trabajamos la operación concreta: quién paga, por qué concepto, en qué moneda y con qué soporte.",
+     "Atendemos la operación concreta: quién paga, por qué concepto, en qué moneda y con qué soporte.",
      "Cada jurisdicción tiene su norma: validamos por caso y no extrapolamos conclusiones de un país a otro."),
     tarjeta("Diagnóstico cambiario", "Clasificación de operaciones y obligaciones ante el régimen cambiario.", "Base", "1")
     + tarjeta("Inversión extranjera", "Registro, reportes y soportes de aportes y reinversión.", "Cumplimiento", "2")
@@ -393,7 +393,7 @@ servicio(
      "La mayoría de las contingencias no son sorpresas técnicas: son procesos sin dueño, permisos "
      "informales y decisiones sin soporte. Se ven al final, cuando llega el requerimiento o el reclamo.",
      "Ordenamos el gobierno de la empresa: quién decide, quién controla y cómo se deja evidencia.",
-     "No instalamos matrices de 200 riesgos que nadie lee: trabajamos pocos riesgos, con control asignado."),
+     "No instalamos matrices de 200 riesgos que nadie lee: operamos con pocos riesgos, con control asignado."),
     tarjeta("Mapa de riesgos", "Identificación y valoración de riesgos por proceso y por impacto.", "Base", "1")
     + tarjeta("Matriz de controles", "Control, responsable, evidencia y frecuencia de verificación.", "Diseño", "2")
     + tarjeta("Políticas y manuales", "Documentos breves que el equipo pueda usar, no adornos.", "Gobierno", "3")
@@ -438,7 +438,7 @@ servicio(
 
 servicio(
     "transformacion-digital", "09",
-    "Tecnología y procesos conectados para trabajar mejor.",
+    "Tecnología y procesos conectados para operar mejor.",
     "Ordenamos procesos y sistemas para que la información fluya sin retranscripción y con control del cambio.",
     ("Los sistemas no se conectan y el equipo hace de puente",
      "Cuando cada área tiene su archivo, la misma cifra se digita tres veces y nadie sabe cuál es la buena. "
@@ -451,7 +451,7 @@ servicio(
     + tarjeta("Control de cambios", "Versiones, responsables y pruebas antes de publicar.", "Gobierno", "4")
     + tarjeta("Capacitación", "Entrenamiento al equipo con manual de uso.", "Adopción", "5")
     + tarjeta("Medición", "Indicadores de tiempo, error y volumen antes y después.", "Resultado", "6"),
-    paso(1, "Diagnóstico", "Procesos actuales, cuellos de botella y retrabajos.")
+    paso(1, "Diagnóstico", "Procesos actuales, cuellos de botella y reprocesos.")
     + paso(2, "Diseño", "Flujo objetivo con reglas y responsables.")
     + paso(3, "Implantación", "Configuración, pruebas y migración controlada.")
     + paso(4, "Adopción", "Capacitación y medición del cambio."),
