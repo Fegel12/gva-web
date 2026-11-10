@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es-CO"><head><meta charset="utf-8">
+<title>Transformación digital y automatización | GVA Group</title>
+<meta name="description" content="Automatizamos documentos, conciliaciones y reportes. Procesos documentados, datos integrados y control del cambio, con validación humana.">
+</head><body>
+<style>
+  .gva-td { font-family: Inter, 'Segoe UI', system-ui, sans-serif; color:#2E3540; }
+  .gva-td .eyebrow { font-size:.76rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#00A9A4 }
+  .gva-td h1,.gva-td h2,.gva-td h3 { color:#2E3540;letter-spacing:-.02em }
+  .gva-td .lead { font-size:1.08rem;color:#4B5563 }
+
+  /* HERO */
+  .gva-td .td-hero { position:relative;overflow:hidden;border-radius:22px;
+      background:radial-gradient(900px 420px at 12% -10%,#0E3B3B 0%,#16232B 45%,#1B2430 100%);color:#fff;padding:52px 44px }
+  .gva-td .td-hero::after { content:"";position:absolute;inset:auto -80px -140px auto;width:420px;height:420px;border-radius:50%;
+      background:radial-gradient(circle at 30% 30%,rgba(0,183,181,.55),rgba(0,177,64,.18) 55%,transparent 70%);filter:blur(10px) }
+  .gva-td .td-hero h1 { color:#fff;font-size:clamp(1.85rem,3.4vw,2.85rem);font-weight:700;line-height:1.1;max-width:640px }
+  .gva-td .td-hero p { color:rgba(255,255,255,.86);max-width:560px }
+  .gva-td .td-chips { display:flex;flex-wrap:wrap;gap:8px;margin-top:22px }
+  .gva-td .td-chip { font-size:.76rem;font-weight:600;letter-spacing:.04em;padding:6px 12px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.9);background:rgba(255,255,255,.06) }
+  .gva-td .td-foto { border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18) }
+  .gva-td .td-foto img { display:block;width:100%;height:auto }
+
+  /* BOTONES */
+  .gva-td .td-btn { display:inline-block;padding:13px 24px;border-radius:11px;font-weight:600;text-decoration:none;
+      background:linear-gradient(135deg,#00B7B5,#00B140);color:#fff !important;box-shadow:0 10px 24px rgba(0,177,64,.22) }
+  .gva-td .td-btn:hover { transform:translateY(-1px) }
+  .gva-td .td-btn2 { display:inline-block;padding:13px 22px;border-radius:11px;font-weight:600;text-decoration:none;
+      border:1px solid rgba(255,255,255,.35);color:#fff !important }
+  .gva-td .td-btn3 { display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;text-decoration:none;
+      border:1.5px solid #CBD5DC;color:#2E3540 !important;background:#fff }
+
+  /* TARJETAS DE AUTOMATIZACIÓN */
+  .gva-td .td-card { background:#fff;border:1px solid #E4E9EF;border-radius:16px;padding:26px 24px;height:100%;
+      transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease }
+  .gva-td .td-card:hover { transform:translateY(-4px);box-shadow:0 18px 40px rgba(26,60,70,.12);border-color:#BFE9E2 }
+  .gva-td .td-num { width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+      font-weight:700;color:#fff;font-size:.95rem;background:linear-gradient(135deg,#00B7B5,#00B140);margin-bottom:14px }
+  .gva-td .td-card h3 { font-size:1.05rem;margin-bottom:8px }
+  .gva-td .td-card p { font-size:.93rem;color:#4B5563;margin-bottom:14px }
+  .gva-td .td-tag { font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#007A78;
+      background:#EAF7F5;border-radius:999px;padding:4px 10px;display:inline-block }
+
+  /* PASOS */
+  .gva-td .td-paso { position:relative;padding-left:52px;padding-bottom:26px;border-left:2px dashed #CFE3E0;margin-left:18px }
+  .gva-td .td-paso:last-child { border-left-color:transparent;padding-bottom:0 }
+  .gva-td .td-paso .td-bola { position:absolute;left:-19px;top:0;width:36px;height:36px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:#0B4F4C;
+      background:#fff;border:2px solid #00B7B5 }
+  .gva-td .td-paso h3 { font-size:1rem;margin-bottom:6px }
+  .gva-td .td-paso p { font-size:.93rem;color:#4B5563;margin:0 }
+
+  /* BANDA */
+  .gva-td .td-suave { background:#F5F9FA;border-radius:20px }
+  .gva-td .td-oscura { background:#1B2430;color:#fff;border-radius:20px }
+  .gva-td .td-oscura h2,.gva-td .td-oscura h3 { color:#fff }
+  .gva-td .td-oscura p { color:rgba(255,255,255,.84) }
+
+  .gva-td .td-lista { list-style:none;padding:0;margin:0 }
+  .gva-td .td-lista li { position:relative;padding-left:26px;margin-bottom:10px;color:#4B5563;font-size:.95rem }
+  .gva-td .td-lista li::before { content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;border-radius:3px;
+      background:linear-gradient(135deg,#00B7B5,#00B140) }
+  .gva-td .td-cifra { font-size:1.5rem;font-weight:700;color:#007A78;letter-spacing:-.02em }
+</style>
+
+<div class="gva-td">
+
+  <!-- HERO -->
+  <section class="pt-4 pb-4"><div class="container">
+    <div class="td-hero">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Transformación digital</p>
+          <h1 class="mb-3">Lo repetitivo se automatiza. La decisión sigue siendo suya.</h1>
+          <p class="mb-4">Documentos, conciliaciones y reportes dejan de consumir el día. Su equipo recupera el
+            tiempo para analizar, y la dirección recibe una cifra única, actualizada y con respaldo.</p>
+          <a class="td-btn me-2 mb-2" href="#automatizamos">Ver qué automatizamos</a>
+          <a class="td-btn2 mb-2" href="/contacto">Hablar con un especialista</a>
+          <div class="td-chips">
+            <span class="td-chip">Odoo</span><span class="td-chip">Power BI</span><span class="td-chip">Python</span>
+            <span class="td-chip">SQL</span><span class="td-chip">Automatización de procesos</span>
+            <span class="td-chip">IA con validación humana</span>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="td-foto"><img src="/web/image/1604" loading="eager" alt="Transformación digital en GVA Group"></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- EL PROBLEMA -->
+  <section class="pt-4 pb-4"><div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-5">
+        <p class="eyebrow mb-1">El costo real</p>
+        <h2 class="h3 mb-3">Cuando los sistemas no se hablan, el equipo hace de puente</h2>
+        <p class="lead mb-0">La misma cifra se digita tres veces y nadie sabe cuál es la buena. El problema no es
+          el software: es el tiempo que se va en retranscribir y el error que entra por ahí.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="td-card"><div class="td-num">01</div>
+            <h3>Tres versiones del mismo dato</h3><p>Cada área guarda su archivo y la junta discute cifras distintas.</p></div></div>
+          <div class="col-md-4"><div class="td-card"><div class="td-num">02</div>
+            <h3>Cierres que dependen de una persona</h3><p>Si esa persona falta, el proceso se detiene.</p></div></div>
+          <div class="col-md-4"><div class="td-card"><div class="td-num">03</div>
+            <h3>Reportes que llegan tarde</h3><p>Cuando el informe está listo, la decisión ya se tomó sin él.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- QUÉ AUTOMATIZAMOS -->
+  <section id="automatizamos" class="pt-5 pb-5"><div class="container">
+    <div class="text-center mb-4" style="max-width:760px;margin:0 auto">
+      <p class="eyebrow mb-1">Qué automatizamos</p>
+      <h2 class="h1 mb-2">Seis frentes, en el orden en que conviene hacerlos</h2>
+      <p class="lead mb-0">No empezamos por la herramienta. Empezamos por el proceso y avanzamos solo cuando el
+        anterior está estable y medido.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><div class="td-card">
+        <div class="td-num">1</div><h3>Diagnóstico del proceso</h3>
+        <p>Qué se hace hoy, cuántas veces, con qué documento y dónde se pierde el tiempo.</p>
+        <span class="td-tag">Punto de partida</span></div></div>
+      <div class="col-md-6 col-lg-4"><div class="td-card">
+        <div class="td-num">2</div><h3>Extracción de documentos</h3>
+        <p>Facturas, extractos y soportes se leen y se clasifican sin digitación manual.</p>
+        <span class="td-tag">Eficiencia</span></div></div>
+      <div class="col-md-6 col-lg-4"><div class="td-card">
+        <div class="td-num">3</div><h3>Conciliaciones automáticas</h3>
+        <p>Cruces masivos con reglas explícitas: las diferencias quedan señaladas, no escondidas.</p>
+        <span class="td-tag">Control</span></div></div>
+      <div class="col-md-6 col-lg-4"><div class="td-card">
+        <div class="td-num">4</div><h3>Modelos de análisis</h3>
+        <p>Cálculos, proyecciones y escenarios con validación humana antes de publicarse.</p>
+        <span class="td-tag">Analítica</span></div></div>
+      <div class="col-md-6 col-lg-4"><div class="td-card">
+        <div class="td-num">5</div><h3>Tableros con datos vivos</h3>
+        <p>Indicadores que se actualizan solos, no un Excel armado el día 30.</p>
+        <span class="td-tag">Visibilidad</span></div></div>
+      <div class="col-md-6 col-lg-4"><div class="td-card">
+        <div class="td-num">6</div><h3>Reglas de uso y privacidad</h3>
+        <p>Quién ve qué, con qué registro y hasta dónde llega el dato.</p>
+        <span class="td-tag">Gobierno</span></div></div>
+    </div>
+  </div></section>
+
+  <!-- METODOLOGÍA -->
+  <section class="pt-5 pb-5"><div class="container">
+    <div class="td-suave p-4 p-lg-5">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="eyebrow mb-1">Metodología</p>
+          <h2 class="h2 mb-3">Cómo lo hacemos</h2>
+          <p class="lead">Cuatro etapas, con entregables verificables en cada una. Si una etapa no cierra, no
+            pasamos a la siguiente.</p>
+          <a class="td-btn3" href="/contacto">Pedir un diagnóstico</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="td-paso"><div class="td-bola">1</div><h3>Diagnóstico</h3>
+            <p>Procesos actuales, cuellos de botella y retrabajos, con evidencia y responsables.</p></div>
+          <div class="td-paso"><div class="td-bola">2</div><h3>Diseño</h3>
+            <p>Flujo objetivo documentado: qué se hace, en qué orden, con qué documento y quién autoriza.</p></div>
+          <div class="td-paso"><div class="td-bola">3</div><h3>Implantación</h3>
+            <p>Configuración, pruebas registradas y migración controlada, sin sorpresas en el cierre.</p></div>
+          <div class="td-paso"><div class="td-bola">4</div><h3>Adopción</h3>
+            <p>Capacitación al equipo, manual de uso y medición del cambio: tiempo, error y volumen.</p></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- QUÉ SE LLEVA SU EMPRESA (comercial) -->
+  <section class="pt-5 pb-5"><div class="container">
+    <div class="row g-4 align-items-end mb-4">
+      <div class="col-lg-8">
+        <p class="eyebrow mb-1">Resultados</p>
+        <h2 class="h1 mb-2">Qué se lleva su empresa</h2>
+        <p class="lead mb-0">No entregamos un informe y desaparecemos. Dejamos el proceso funcionando, medido y
+          documentado, con el equipo entrenado para sostenerlo.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="td-btn3" href="/casos-de-exito">Ver casos de éxito</a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="td-card">
+        <h3>Horas que vuelven al análisis</h3>
+        <p>El trabajo repetitivo —transcribir, cruzar, armar el reporte— deja de ocupar el día del equipo.</p>
+        <p class="mb-0 td-cifra">Menos retrabajo</p></div></div>
+      <div class="col-md-4"><div class="td-card">
+        <h3>Una cifra, del día</h3>
+        <p>La junta y el área discuten sobre el mismo dato, actualizado, no sobre tres archivos distintos.</p>
+        <p class="mb-0 td-cifra">Decisión informada</p></div></div>
+      <div class="col-md-4"><div class="td-card">
+        <h3>Control que aguanta revisión</h3>
+        <p>Cada ejecución queda registrada: quién, cuándo y con qué dato se produjo el resultado.</p>
+        <p class="mb-0 td-cifra">Trazabilidad</p></div></div>
+    </div>
+  </div></section>
+
+  <!-- EXPERIENCIA -->
+  <section class="pt-5 pb-5"><div class="container">
+    <div class="td-oscura p-4 p-lg-5">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="eyebrow mb-1" style="color:#5CE1D6">Experiencia</p>
+          <h2 class="h2 mb-3">Dónde lo hemos aplicado</h2>
+          <p>No llega un equipo a aprender con su operación. Llevamos años haciendo esto sobre libros reales,
+            con cierres, auditorías y entes de control encima.</p>
+          <a class="td-btn mt-2" href="/contacto">Contarnos su caso</a>
+        </div>
+        <div class="col-lg-7">
+          <ul class="td-lista">
+            <li style="color:rgba(255,255,255,.86)">Auditoría y revisión de cifras con análisis de datos en salud,
+              industria, construcción y servicios.</li>
+            <li style="color:rgba(255,255,255,.86)">Tributación: conciliación de información exógena y medios
+              magnéticos, año tras año.</li>
+            <li style="color:rgba(255,255,255,.86)">Nómina y seguridad social: cruces de novedades contra pagos y
+              provisiones.</li>
+            <li style="color:rgba(255,255,255,.86)">Inventarios y costos: conciliación de kardex contra
+              contabilidad.</li>
+            <li style="color:rgba(255,255,255,.86)">Tableros de dirección: cartera, flujo de caja y resultado, con
+              datos que no se digitan a mano.</li>
+            <li style="color:rgba(255,255,255,.86)">Herramientas propias para volúmenes grandes de terceros y
+              documentos, sin depender de macros ni de una sola persona.</li>
+          </ul>
+          <p class="mb-0" style="font-size:.9rem">Cuando el caso exige una especialidad que no cubrimos
+            directamente, entra un aliado que trabaja bajo nuestra dirección.
+            <a href="/aliados" style="color:#5CE1D6">Ver aliados</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- REGLAS -->
+  <section class="pt-4 pb-5"><div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <p class="eyebrow mb-1">Sin excepciones</p>
+        <h2 class="h3 mb-2">Reglas que no negociamos</h2>
+        <p class="text-muted mb-0">La velocidad no puede costar control. Si hay que elegir, elegimos control.</p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <div class="col-md-4"><div class="td-card"><h3>Validación humana</h3>
+            <p class="mb-0">Ningún resultado se publica sin una persona que lo revise y lo firme.</p></div></div>
+          <div class="col-md-4"><div class="td-card"><h3>Trazabilidad</h3>
+            <p class="mb-0">Cada automatización deja registro de ejecución y de fuente.</p></div></div>
+          <div class="col-md-4"><div class="td-card"><h3>Reserva del dato</h3>
+            <p class="mb-0">Su información no se usa para entrenar modelos sin autorización escrita.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- CTA -->
+  <section class="pb-5"><div class="container">
+    <div class="p-4 p-lg-5 text-center" style="border-radius:20px;background:linear-gradient(135deg,#00B7B5,#00B140)">
+      <h2 class="h2 mb-2" style="color:#fff">¿Por dónde empezamos?</h2>
+      <p class="mb-4" style="color:rgba(255,255,255,.94);max-width:640px;margin:0 auto">Un diagnóstico de una hora
+        alcanza para decirle qué automatizar primero y qué no vale la pena tocar todavía.</p>
+      <a class="td-btn3" href="/contacto" style="border:0">Agendar diagnóstico</a>
+      <a class="td-btn2 ms-2" href="tel:+573219101850" style="border-color:rgba(255,255,255,.6)">+57 321 910 1850</a>
+    </div>
+  </div></section>
+
+</div>
+</body></html>
