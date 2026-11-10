@@ -61,6 +61,31 @@
   .gva-td .td-lista li { position:relative;padding-left:26px;margin-bottom:10px;color:#4B5563;font-size:.95rem }
   .gva-td .td-lista li::before { content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;border-radius:3px;
       background:linear-gradient(135deg,#00B7B5,#00B140) }
+
+  /* ACORDEÓN DE FRENTES */
+  .gva-td .td-ent{border:1px solid #E4E9EF;border-radius:16px;background:#fff;height:auto;
+      transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  .gva-td .td-ent:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(26,60,70,.12);border-color:#BFE9E2}
+  .gva-td .td-ent[open]{border-color:#00B7B5;box-shadow:0 20px 44px rgba(26,60,70,.14)}
+  .gva-td .td-ent>summary{list-style:none;cursor:pointer;padding:26px 24px 20px}
+  .gva-td .td-ent>summary::-webkit-details-marker{display:none}
+  .gva-td .td-pista{font-size:.8rem;color:#007A78;font-weight:600;margin-top:14px;display:flex;gap:6px;align-items:center}
+  .gva-td .td-ent[open] .td-pista{color:#6B7280;font-weight:500}
+  .gva-td .td-flecha{transition:transform .2s;display:inline-block}
+  .gva-td .td-ent[open] .td-flecha{transform:rotate(90deg)}
+  .gva-td .td-cerrar{display:none}.gva-td .td-ent[open] .td-abrir{display:none}.gva-td .td-ent[open] .td-cerrar{display:inline}
+  .gva-td .td-muestra{margin:0 24px 24px;border-radius:12px;background:#FBFDFD;border:1px dashed #CFE3E0;padding:16px;overflow-x:auto}
+  .gva-td .td-muestra .rot{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#007A78;margin-bottom:10px}
+  .gva-td .doc{background:#fff;border:1px solid #E4E9EF;border-radius:10px;padding:14px 16px;box-shadow:0 6px 16px rgba(26,60,70,.06)}
+  .gva-td .doc h5{font-size:.82rem;font-weight:700;margin-bottom:2px}
+  .gva-td .doc .sub{font-size:.72rem;color:#8A97A3;margin-bottom:10px}
+  .gva-td .doc table{width:100%;font-size:.82rem;border-collapse:collapse}
+  .gva-td .doc th{text-align:left;font-weight:600;color:#6B7280;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;padding:6px 4px;border-bottom:1px solid #E4E9EF}
+  .gva-td .doc td{padding:7px 4px;border-bottom:1px solid #F1F5F8;color:#3F4A55}
+  .gva-td .pt{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+  .gva-td .pt.bajo{background:#00B140}.gva-td .pt.medio{background:#E9A23B}.gva-td .pt.alto{background:#E85D5D}
+  .gva-td .td-nota{font-size:.74rem;color:#8A97A3;margin-top:10px;margin-bottom:0}
+  .gva-td .row-td>div:has(details[open]){flex:0 0 100%;max-width:100%}
   .gva-td .td-cifra { font-size:1.5rem;font-weight:700;color:#007A78;letter-spacing:-.02em }
   @media (max-width: 767px) {
     .gva-td .td-hero { padding:30px 22px;border-radius:18px }
@@ -142,32 +167,7 @@
       <p class="lead mb-0">No empezamos por la herramienta. Empezamos por el proceso y avanzamos solo cuando el
         anterior está estable y medido.</p>
     </div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4"><div class="td-card">
-        <div class="td-num">1</div><h3>Diagnóstico del proceso</h3>
-        <p>Qué se hace hoy, cuántas veces, con qué documento y dónde se pierde el tiempo.</p>
-        <span class="td-tag">Punto de partida</span></div></div>
-      <div class="col-md-6 col-lg-4"><div class="td-card">
-        <div class="td-num">2</div><h3>Extracción de documentos</h3>
-        <p>Facturas, extractos y soportes se leen y se clasifican sin digitación manual.</p>
-        <span class="td-tag">Eficiencia</span></div></div>
-      <div class="col-md-6 col-lg-4"><div class="td-card">
-        <div class="td-num">3</div><h3>Conciliaciones automáticas</h3>
-        <p>Cruces masivos con reglas explícitas: las diferencias quedan señaladas, no escondidas.</p>
-        <span class="td-tag">Control</span></div></div>
-      <div class="col-md-6 col-lg-4"><div class="td-card">
-        <div class="td-num">4</div><h3>Modelos de análisis</h3>
-        <p>Cálculos, proyecciones y escenarios con validación humana antes de publicarse.</p>
-        <span class="td-tag">Analítica</span></div></div>
-      <div class="col-md-6 col-lg-4"><div class="td-card">
-        <div class="td-num">5</div><h3>Tableros con datos vivos</h3>
-        <p>Indicadores que se actualizan solos, no un Excel armado el día 30.</p>
-        <span class="td-tag">Visibilidad</span></div></div>
-      <div class="col-md-6 col-lg-4"><div class="td-card">
-        <div class="td-num">6</div><h3>Reglas de uso y privacidad</h3>
-        <p>Quién ve qué, con qué registro y hasta dónde llega el dato.</p>
-        <span class="td-tag">Gobierno</span></div></div>
-    </div>
+    <div class="row g-4 row-td"><div class="col-md-6 col-lg-4"><details class="td-ent" name="frentes"><summary><div class="td-num">1</div><h3>Diagnóstico del proceso</h3><p>Qué se hace hoy, cuántas veces, con qué documento y dónde se pierde el tiempo.</p><span class="td-tag">Punto de partida</span><div class="td-pista"><span class="td-flecha">▸</span><span class="td-abrir">Ver un ejemplo</span><span class="td-cerrar">Ocultar ejemplo</span></div></summary><div class="td-muestra"><div class="rot">Así se ve (ejemplo ilustrativo)</div><div class="doc"><h5>Qué se hace hoy y cuánto cuesta</h5><div class="sub">Horas al mes por tarea</div><table><tr><th>Tarea</th><th>Veces/mes</th><th>Horas</th></tr><tr><td>Digitación de facturas</td><td>320</td><td>62</td></tr><tr><td>Conciliación bancaria</td><td>4</td><td>38</td></tr><tr><td>Informe de gerencia</td><td>1</td><td>14</td></tr></table></div><p class="td-nota">Antes de automatizar: cuánto tiempo se va y en qué exactamente.</p></div></details></div><div class="col-md-6 col-lg-4"><details class="td-ent" name="frentes"><summary><div class="td-num">2</div><h3>Extracción de documentos</h3><p>Facturas, extractos y soportes se leen y se clasifican sin digitación manual.</p><span class="td-tag">Eficiencia</span><div class="td-pista"><span class="td-flecha">▸</span><span class="td-abrir">Ver un ejemplo</span><span class="td-cerrar">Ocultar ejemplo</span></div></summary><div class="td-muestra"><div class="rot">Así se ve (ejemplo ilustrativo)</div><div class="doc"><h5>Factura leída sin digitar</h5><div class="sub">Campos extraídos</div><table><tr><td>Proveedor</td><td><span class="pt bajo"></span>Detectado</td></tr><tr><td>NIT y valor</td><td><span class="pt bajo"></span>Detectados</td></tr><tr><td>Centro de costo</td><td><span class="pt medio"></span>Revisión humana</td></tr></table></div><p class="td-nota">Lo dudoso se marca para que una persona decida; no se adivina.</p></div></details></div><div class="col-md-6 col-lg-4"><details class="td-ent" name="frentes"><summary><div class="td-num">3</div><h3>Conciliaciones automáticas</h3><p>Cruces masivos con reglas explícitas: las diferencias quedan señaladas, no escondidas.</p><span class="td-tag">Control</span><div class="td-pista"><span class="td-flecha">▸</span><span class="td-abrir">Ver un ejemplo</span><span class="td-cerrar">Ocultar ejemplo</span></div></summary><div class="td-muestra"><div class="rot">Así se ve (ejemplo ilustrativo)</div><div class="doc"><h5>Cruce banco vs. contabilidad</h5><div class="sub">Reglas explícitas</div><table><tr><th>Concepto</th><th>Registros</th><th>Diferencia</th></tr><tr><td>Transferencias</td><td>412</td><td><span class="pt bajo"></span>0</td></tr><tr><td>Comisiones</td><td>36</td><td><span class="pt medio"></span>2</td></tr><tr><td>Cheques</td><td>8</td><td><span class="pt bajo"></span>0</td></tr></table></div><p class="td-nota">Las excepciones llegan a una lista; no se diluyen en el total.</p></div></details></div><div class="col-md-6 col-lg-4"><details class="td-ent" name="frentes"><summary><div class="td-num">4</div><h3>Modelos de análisis</h3><p>Cálculos, proyecciones y escenarios con validación humana antes de publicarse.</p><span class="td-tag">Analítica</span><div class="td-pista"><span class="td-flecha">▸</span><span class="td-abrir">Ver un ejemplo</span><span class="td-cerrar">Ocultar ejemplo</span></div></summary><div class="td-muestra"><div class="rot">Así se ve (ejemplo ilustrativo)</div><div class="doc"><h5>Modelo con validación humana</h5><div class="sub">Qué calcula y quién aprueba</div><p style="font-size:.8rem;color:#3F4A55;margin:8px 0"><strong>Calcula:</strong> proyección de caja a 12 meses y punto de equilibrio.</p><p style="font-size:.8rem;color:#3F4A55;margin-bottom:8px"><strong>Valida:</strong> dirección, antes de publicar.</p><span class="td-tag">Supuestos visibles</span></div><p class="td-nota">Si un supuesto cambia, se sabe qué se movió.</p></div></details></div><div class="col-md-6 col-lg-4"><details class="td-ent" name="frentes"><summary><div class="td-num">5</div><h3>Tableros con datos vivos</h3><p>Indicadores que se actualizan solos, no un Excel armado el día 30.</p><span class="td-tag">Visibilidad</span><div class="td-pista"><span class="td-flecha">▸</span><span class="td-abrir">Ver un ejemplo</span><span class="td-cerrar">Ocultar ejemplo</span></div></summary><div class="td-muestra"><div class="rot">Así se ve (ejemplo ilustrativo)</div><div class="doc"><h5>Tablero que se actualiza solo</h5><div class="sub">Sin Excel armado el día 30</div><table><tr><td>Cartera</td><td><strong>42 días</strong></td></tr><tr><td>Flujo de caja</td><td><strong>$ 120 M</strong></td></tr><tr><td>Margen bruto</td><td><strong>18,4 %</strong></td></tr><tr><td>Última carga</td><td>Hoy 7:00</td></tr></table></div><p class="td-nota">Si el dato no se actualizó, el tablero lo dice.</p></div></details></div><div class="col-md-6 col-lg-4"><details class="td-ent" name="frentes"><summary><div class="td-num">6</div><h3>Reglas de uso y privacidad</h3><p>Quién ve qué, con qué registro y hasta dónde llega el dato.</p><span class="td-tag">Gobierno</span><div class="td-pista"><span class="td-flecha">▸</span><span class="td-abrir">Ver un ejemplo</span><span class="td-cerrar">Ocultar ejemplo</span></div></summary><div class="td-muestra"><div class="rot">Así se ve (ejemplo ilustrativo)</div><div class="doc"><h5>Quién ve qué</h5><div class="sub">Regla escrita, no supuesta</div><table><tr><th>Dato</th><th>Acceso</th><th>Autorización</th></tr><tr><td>Facturas</td><td>Contabilidad</td><td>Sí</td></tr><tr><td>Nómina</td><td>Restringido</td><td>Sí, expresa</td></tr><tr><td>Terceros</td><td>No se usan para entrenar</td><td>No</td></tr></table></div><p class="td-nota">Su información no entrena modelos ajenos sin permiso escrito.</p></div></details></div>    </div>
   </div></section>
 
   <!-- METODOLOGÍA -->
