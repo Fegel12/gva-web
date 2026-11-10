@@ -212,7 +212,7 @@ SERV = """
       <article class="tarjeta">
         <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5m0 14h16"/><path d="M8 15l4-6 4 3 4-7"/></svg></div>
         <h3>NIIF: implementación y auditoría</h3>
-        <p>Adopción con políticas contables que se sostienen años después del primer informe. Implementaciones desde 600 horas y auditorías desde 250 horas de trabajo.</p>
+        <p>Adopción con políticas contables que se sostienen años después del primer informe. Implementaciones desde 600 horas y auditorías desde 250 horas de encargo.</p>
         <span class="para">Todos los sectores de la economía</span>
       </article>
 
@@ -272,7 +272,7 @@ CASOS = """
       <tr><td><strong>Cultura y medios</strong></td><td>Discos Fuentes</td></tr>
       <tr><td><strong>Servicios y gremios</strong></td><td>Francisco Murillo · Cámara de Comercio de Medellín · Cootrasenvi · Adida</td></tr>
     </table>
-    <p class="nota" style="margin-top:28px">¿Quiere ver un caso parecido al suyo? Escríbanos y le mostramos el alcance del trabajo, las cifras y las referencias que el cliente haya autorizado publicar.</p>
+    <p class="nota" style="margin-top:28px">¿Quiere ver un caso parecido al suyo? Escríbanos y le mostramos el alcance del encargo, las cifras y las referencias que el cliente haya autorizado publicar.</p>
   </div>
 </section>
 
@@ -367,7 +367,7 @@ PRIV = """
     <p>GVA GROUP S.A.S., con oficina en Calle 60B Sur # 44-100, Sabaneta, Antioquia, Colombia. Correo de atención: <a href="mailto:gerencia@gvagroup.com.co">gerencia@gvagroup.com.co</a>.</p>
 
     <h3>¿Qué datos tratamos?</h3>
-    <p>Los que usted nos entrega voluntariamente al escribirnos o contratar un servicio: nombre, empresa, correo, teléfono y la información necesaria para prestar el servicio contratado. En desarrollo de trabajos contables y tributarios tratamos información financiera de la empresa cliente, sujeta a deber de reserva profesional.</p>
+    <p>Los que usted nos entrega voluntariamente al escribirnos o contratar un servicio: nombre, empresa, correo, teléfono y la información necesaria para prestar el servicio contratado. En desarrollo de encargos contables y tributarios tratamos información financiera de la empresa cliente, sujeta a deber de reserva profesional.</p>
 
     <h3>¿Para qué los usamos?</h3>
     <p>Para responder su solicitud, elaborar propuestas, ejecutar el servicio contratado, cumplir obligaciones legales y contables, y enviarle información de interés profesional cuando lo haya autorizado.</p>
