@@ -67,7 +67,7 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
   </div>""", "gva-suave pt-5 pb-5") + f1.bloque("""
   <div class="row g-5">
     <div class="col-lg-2 text-center text-lg-start">
-      <img src="/web/image/1635" alt="Edgar Fernando Gelvis Vega, director de GVA Group" loading="eager"
+      <img src="/web/image/1636" alt="Edgar Fernando Gelvis Vega, director de GVA Group" loading="eager"
            style="width:150px;height:150px;object-fit:cover;border-radius:50%;box-shadow:0 12px 28px rgba(26,60,70,.18);border:4px solid #fff">
     </div>
     <div class="col-lg-4">
