@@ -27,6 +27,14 @@ RETRATO = "https://fegel12.github.io/gva-web/odoo-web/img/retrato.jpg"
 FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales más sólidas.",
                 "GVA Group une contaduría, impuestos y ciencia de datos. Cada cifra con soporte, cada decisión con evidencia.",
                 "Conozca nuestra firma", "#historia") + f1.bloque(f"""
+  <div class="row justify-content-center"><div class="col-lg-10 text-center">
+    <p class="eyebrow mb-2">Qué hacemos</p>
+    <p style="font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.55;color:#2E3540;font-weight:500;margin:0">
+      En GVA Group las cifras de su empresa se sostienen. Auditamos, ordenamos los procesos que las producen y
+      automatizamos lo repetitivo: menos retrabajo, riesgos vistos a tiempo y decisiones con evidencia.
+      <strong>Contabilidad, impuestos, finanzas y datos, sobre una misma base.</strong>
+    </p>
+  </div></div>""") + f1.bloque(f"""
   <div class="row g-5" id="historia">
     <div class="col-lg-7">
       <p class="eyebrow mb-1">Nuestra historia</p>
@@ -58,7 +66,11 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
     <div class="col-6 col-lg"><div class="gva-card"><h3>Cercanía</h3><p>Acompañamos; no solo entregamos informes.</p></div></div>
   </div>""", "gva-suave pt-5 pb-5") + f1.bloque("""
   <div class="row g-5">
-    <div class="col-lg-5">
+    <div class="col-lg-2 text-center text-lg-start">
+      <img src="/web/image/1635" alt="Edgar Fernando Gelvis Vega, director de GVA Group" loading="eager"
+           style="width:150px;height:150px;object-fit:cover;border-radius:50%;box-shadow:0 12px 28px rgba(26,60,70,.18);border:4px solid #fff">
+    </div>
+    <div class="col-lg-4">
       <h2 class="h3 mb-2">Quién responde</h2>
       <p class="lead mb-2">Edgar Fernando Gelvis Vega · Director</p>
       <p>Contador público, especialista en impuestos y magíster en análisis de datos. Dirige personalmente los
@@ -66,7 +78,7 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
       <p class="mb-0">El equipo conoce el sector de cada cliente: salud, industria, servicios, transporte,
         inmobiliario y cultura.</p>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-6">
       <div class="gva-card"><h3>Datos de la firma</h3>
         <table class="table table-sm mb-0" style="font-size:.93rem">
           <tr><td style="color:#4B5563;width:38%">Razón social</td><td>GVA GROUP S.A.S.</td></tr>
@@ -76,13 +88,38 @@ FIRMA = f1.hero("02", "Experiencia profesional para decisiones empresariales má
           <tr><td style="color:#4B5563">Oficina</td><td>Calle 60B Sur # 44-100, Sabaneta, Antioquia</td></tr>
           <tr><td style="color:#4B5563">Correo</td><td><a href="mailto:gerencia@gvagroup.com.co">gerencia@gvagroup.com.co</a></td></tr>
           <tr><td style="color:#4B5563">Teléfono</td><td><a href="tel:+573219101850">+57 321 910 1850</a></td></tr>
+          <tr><td style="color:#4B5563">Datos personales</td><td><a href="/privacy">Política de tratamiento</a></td></tr>
         </table></div>
     </div>
   </div>""") + f1.pruebas([
     "Metodología documentada en cada trabajo.",
     "Informes con fuente, fecha y responsable.",
     "Datos del cliente tratados con reserva profesional.",
-]) + f1.banda("Conozca cómo trabajamos", "Una conversación de diagnóstico, sin costo.")
+]) + f1.bloque("""
+  <div class="row g-5">
+    <div class="col-lg-6">
+      <p class="eyebrow mb-1">Cómo trabajamos</p>
+      <h2 class="h3 mb-3">Escuchamos antes de proponer</h2>
+      <p>Preguntamos lo incómodo temprano: qué no está documentado, quién depende de quién, qué pasaría si esa
+        persona falta. Esas preguntas molestan al principio y ahorran problemas después.</p>
+      <p>Después decimos tres cosas con claridad: <strong>qué podemos resolver, qué no, y qué necesitamos de
+        usted</strong> para hacerlo. Si su caso no es para nosotros, se lo decimos antes de cobrar, no al final.</p>
+      <p class="mb-0">La primera conversación es de diagnóstico, no de venta.</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="gva-card h-100">
+        <h3 class="h5 mb-3">Lo que necesitamos de usted</h3>
+        <ul class="gva-lista">
+          <li>Acceso a la información real, aunque esté desordenada.</li>
+          <li>Una persona responsable que pueda decidir, no solo opinar.</li>
+          <li>Disposición a corregir el proceso, no solo el número.</li>
+          <li>Tiempo del equipo para las preguntas que vamos a hacer.</li>
+        </ul>
+        <p class="mb-0 mt-3" style="font-size:.92rem;color:#4B5563">Con eso, cualquier firma seria puede ayudarle.
+          Sin eso, ninguna puede.</p>
+      </div>
+    </div>
+  </div>""") + f1.banda("Conozca cómo trabajamos", "Una conversación de diagnóstico, sin costo.")
 
 pagina("nuestra-firma", "Nuestra firma | GVA Group",
        "GVA Group: contaduría, impuestos y ciencia de datos. Misión, visión, valores y dirección de la firma.",
